@@ -15,7 +15,7 @@ root.iconbitmap("icon.ico")
 
 def Select_Song():
     global file,song
-    file = askopenfilename(initialdir='C:/Users/yousaf/Music', title="Choose A Song", filetypes=(("mp3 Files", "*.mp3"), ))     #open file
+    file = askopenfilename(initialdir='C:/Users/Music', title="Choose A Song", filetypes=(("mp3 Files", "*.mp3"), ))     #open file
     song = file.split('/')[len(file.split('/'))-1]   #extract file name
     CurrentSong['text'] = song     #show the name of music on screen
 
